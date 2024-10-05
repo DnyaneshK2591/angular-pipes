@@ -1,0 +1,13 @@
+<p>Custom Pipes</p>
+
+<ul>
+  <li *ngFor="let value of values | filterByLength: 5">{{ value }}</li>
+</ul>
+
+<h5>Pure Pipe</h5>
+{{ numbers | doublePure }}
+<br />
+<br />
+<h5>Impure Pipe</h5>
+
+{{ numbers | doubleImpure }}
